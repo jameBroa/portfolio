@@ -1,0 +1,30 @@
+@media only screen and (min-width: 0px) {
+  #logo{
+    width:60px;
+  }
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  #logo{
+    width:70px;
+  }
+}
+
+
+@media only screen and (min-width: 900px) {
+  #logo{
+    width:90px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #logo{
+    width:150px;
+  }
+  .headerButton{
+    width:100%;
+  }
+}
+
