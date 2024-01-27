@@ -28,3 +28,42 @@
   }
 }
 
+.motionDiv{
+  height:100%;
+}
+
+.progress-bar {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: black;
+  transform-origin: 0%;
+}
+
+.horizontalSection {
+  position:relative;
+  height:300vh;
+}
+
+.carousel-div{
+  position:sticky;
+  top:0;
+  display:flex;
+  overflow:hidden;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+.horizontalMotionDiv{
+  display:flex;
+  height:inherit;
+  align-items: center;
+}
+
+.carousel-text{
+  color:white;
+}
+
