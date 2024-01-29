@@ -1,4 +1,4 @@
-import { Avatar, Button, Grid, Paper, Stack, Typography } from '@mui/material';
+import { Avatar, Box, Button, Grid, Paper, Stack, Typography } from '@mui/material';
 import './App.css';
 import Header from './components/header';
 import { useAnimation, useScroll, motion, useSpring } from 'framer-motion';
@@ -15,6 +15,8 @@ import react from './images/react.png';
 import { useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import HorizontalCarousel from './components/horizontalCarousel';
+import { javaColour, mobileColour, pythonColour, webDevColour } from './styling/colourConstants';
+import Footer from './components/footer';
 function App() {
 
   const {scrollYProgress} = useScroll();
@@ -51,8 +53,8 @@ function App() {
           display:'flex', flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
           <Stack spacing={4} direction="column" alignItems="center" >
             <motion.div 
-            animate={{scale:[0,1]}}
-            whileInView={{scale:[0,1]}}
+            animate={{scale:[0.5,1]}}
+            whileInView={{scale:[0.5,1]}}
             transition={{type:'spring'}}
           
             >
@@ -63,8 +65,8 @@ function App() {
               sm:'52px',
               xs:'36px'}}}>Hi 👋, I’m James</Typography></motion.div>
             <motion.div 
-            animate={{scale:[0,1]}} 
-            whileInView={{scale:[0,1]}} 
+            animate={{scale:[0.5,1]}} 
+            whileInView={{scale:[0.5,1]}} 
             transition={{type:'spring', delay:0.2}}>
 
             <Typography variant="h1" sx={{fontSize:{
@@ -76,8 +78,8 @@ function App() {
               </motion.div>
 
               <motion.div
-            animate={{scale:[0,1]}}
-            whileInView={{scale:[0,1]}} 
+            animate={{scale:[0.5,1]}}
+            whileInView={{scale:[0.5,1]}} 
             transition={{type:'spring'}}
             >
             <Button endIcon={<ArrowForwardIcon/>} color='black' variant='contained' sx={{color:'white', borderRadius:'50px', height:'60px', width:'300px', textTransform:'none'}}>
@@ -88,52 +90,99 @@ function App() {
           </Stack>
         </Grid>
 
-        <Grid item lg={5} xs={12} sx={{display:'flex', justifyContent:{
+        <Grid item lg={5} xs={12} sx={{display:'flex', 
+        height:{
+          lg:'800px',
+          md:'700px',
+          sm:'450px',
+          xs:'450px',
+        },
+        alignItems:'center',
+        // backgroundColor:'skyblue',
+        
+       justifyContent:{
           lg:'flex-end',
-          xs:'center'}}}>
-          <Avatar src={Photo} sx={{width: {
-            lg:'600px',
-            md:'400px',
-            xs:'300px'
+          xs:'center'}}}
+          
+          >
+          <Avatar src={Photo} sx={{
+            
+            width: {
+              xs:'92%',
+              sm:'55%',
+              md:'60%',
+              lg:'80%'
+            // lg:'600px',
+            // md:'400px',
+            // xs:'300px'
           }, height:{
-            lg:'600px',
-            md:'400px',
-            xs:'300px'
-          }}}/>
+            xs:'80%',
+            sm:'100%',
+            md:'80%',
+            lg:'80%'
+            // lg:'600px',
+            // md:'400px',
+            // xs:'300px'
+          }
+          
+          }}/>
         </Grid>
 
-        <Grid mb={20} item lg={7} xs={12} sx={{display:'flex', justifyContent:{lg:'flex-end', xs:'center'}, textAlign:{xs:'center', lg:'left'}}}>
-          <Typography variant="h1" sx={{
-            width:{
-              md:'900px',
-              sm:'600px',
-              xs:'350px',
-            },
-            paddingLeft:{
-              lg:'20px'}, 
-            paddingTop:{
-              xs:'20px'
-            },
-            fontSize:{
-            lg:'82px',
-            md:'64px',
-            sm:'32px',
-            xs:'22px'}}}>
+        <Grid mb={20} item lg={7} xs={12} 
+          sx={{
+            display:'flex', 
+            height:{
+                lg:'800px',
+                md:'600px',
+                sm:'400px',
+                xs:'auto'
+              }, 
+            justifyContent:{
+              lg:'center', xs:'center'
+              }, 
+            alignItems: 'center',
+
+            textAlign:{
+              xs:'center', 
+              lg:'left'
+              },
+            // backgroundColor:'pink',
+              
+          }}>
+          <Typography variant="h1" 
+            sx={{
+              width:{
+                md:'700px',
+                sm:'500px',
+                xs:'350px',
+              },
+          
+              // paddingLeft:{
+              //   lg:'20px'}, 
+              // paddingTop:{
+              //   xs:'20px'
+              // },
+              fontSize:{
+              lg:'64px',
+              md:'64px',
+              sm:'32px',
+              xs:'22px'}
+            }}>
           Hi! My name is James Broadhurst and I am an aspiring Full stack developer who is currently in my third year at the University of Edinburgh.
           </Typography>
         </Grid>
 
         <Grid item lg={4} xs={12} sx={{ display:'flex', justifyContent:{xs:'center', lg:'flex-end'}}}>
-            <Experience number={1} desc="Year of experience"/>
+            <Experience number={'1'} desc="Year of experience"/>
           </Grid>
 
           <Grid item lg={4} xs={12} sx={{display:'flex', justifyContent:'center'}}>
-          <Experience number={10} desc="Guided Projects"/>
+          <Experience number={'10'} desc="Guided Projects"/>
 
           </Grid>
 
           <Grid mb={20} item lg={4} xs={12} sx={{ display:'flex', justifyContent:{xs:'center', lg:'flex-start'}}}>
-            <Experience number={7} desc="Languages"/>
+            <Experience number={'7'} desc="Languages"/>
           </Grid>
 
 
@@ -145,17 +194,17 @@ function App() {
               <Grid container spacing={1}>
                 <Grid item lg={4} xs={12} md={6} sx={{height:{xs:'600px', sm:'600px', md:'800px', lg:'800px'}}}>
                   {/* <motion.div className="motionDiv" initial={{opacity:0}} whileInView={{y:[500,0], opacity:1}} transition={{type:'spring'}}> */}
-                  <Paper sx={{backgroundColor:'#F1F5F9', height:'100%', width:'100%'}}>
+                  <Paper sx={{backgroundColor:webDevColour, height:'100%', width:'100%'}}>
                     <BentoText imgSrc={js} secondImgSrc={react} title="Web dev" desc="tes"/>
                   </Paper>
                   {/* </motion.div> */}
                 </Grid>
                 <Grid item lg={4} xs={12} md={6}sx={{ height:'800px'}}>
                   <Stack direction="column" spacing={2}>
-                    <Paper sx={{backgroundColor:'#F1F6F5', height:'388px', width:'100%'}}>
+                    <Paper sx={{backgroundColor:javaColour, height:'388px', width:'100%'}}>
                       <BentoText imgSrc={Java} title="Java and C" desc="More Text"/>
                     </Paper>
-                    <Paper sx={{backgroundColor:'#F8EDE4', height:'388px', width:'100%'}}>
+                    <Paper sx={{backgroundColor:mobileColour, height:'388px', width:'100%'}}>
                     <BentoText imgSrc={reactNative} title="Mobile Dev." desc="More Text"/>
                     </Paper>
                   </Stack>
@@ -163,7 +212,7 @@ function App() {
                 </Grid>
                 <Grid item lg={4} xs={12} md={12} sx={{height:'800px'}}>
                 <Stack direction="column" spacing={2}>
-                    <Paper sx={{backgroundColor:'#F8F8F8', height:'388px', width:'100%'}}>
+                    <Paper sx={{backgroundColor:pythonColour, height:'388px', width:'100%'}}>
                     <BentoText imgSrc={Python} title="Python" desc="More Text"/>
                     </Paper>
                     <Paper sx={{backgroundColor:'#FFFAE9', height:'388px', width:'100%'}}>
@@ -179,17 +228,12 @@ function App() {
             </Grid>
 
           </Grid>
-          <Grid mb={2} item lg={12}>
+          <Grid mb={12} item lg={12}>
             <HorizontalCarousel/>
           </Grid>
 
-          <Grid item lg={12}>
-            <Stack direction="row" spacing={4}>
-              <Paper sx={{width:'500px', height:'250px', backgroundColor:'#a8a8a8'}}/>
-              <Paper sx={{width:'500px', height:'250px', backgroundColor:'#a8a8a8'}}/>
-              <Paper sx={{width:'500px', height:'250px', backgroundColor:'#a8a8a8'}}/>
-              <Paper sx={{width:'500px', height:'250px', backgroundColor:'#a8a8a8'}}/>
-            </Stack>
+          <Grid item xs={12}>
+              <Footer/>
           </Grid>
 
 

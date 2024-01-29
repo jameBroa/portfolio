@@ -1,0 +1,9 @@
+.block{
+    background-color: black;
+    width:inherit;
+}
+
+.grid{
+    background-color: white;
+    height:100vh;
+}

@@ -67,3 +67,16 @@
   color:white;
 }
 
+:root {
+  --x-start: 25.5px;
+  --x-end: -26%;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    --x-start: 25.5px;
+    --x-end: -26%;
+  }
+}
+
