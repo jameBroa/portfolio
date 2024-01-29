@@ -22,23 +22,27 @@ const Footer = () => {
                         width:{
                             lg: '600px',
                             md:'600px',
-                            xs:'200px',
+                            xs:'300px',
                             }, 
                         textAlign:'center'
                         
                         }}>Let's work together</Typography>
                 </motion.div>    
                 <Button startIcon={<EmailIcon/>}color="white" variant="outlined" sx={{textTransform:'none', width:'300px', height:'60px', borderRadius:'40px'}}>
-                    <Typography>jbroadhurst2802@gmail.com</Typography>
+                    <a className="links" href="mailto:jbroadhurst2802@gmail.com"><Typography>jbroadhurst2802@gmail.com</Typography></a>
                 </Button>
                 <Divider sx={{
                     width:{ 
-                        lg:'1000px'
+                        lg:'1000px',
+                        xs:'500px',
+                        md:'800px',
+                        sm:'500px',
+                        xs:'300px'
                         }, 
                     bgcolor:'#eee',}}/>
-                <Stack direction="row" spacing={2} sx={{display:"flex", alignItems:"flex-start", width:'1000px'}}alignItems="flex-start" justifyContent={"flex-start"}>
-                    <FooterButton title="LinkedIn" handle="@jbroa2802"/>
-                    <FooterButton title="Github" handle="@jameBroa"/>
+                <Stack direction="row" spacing={2} sx={{display:"flex", alignItems:"flex-start", width:{lg:'1000px', md:'800px', sm:'500px', xs:'300px'}}}alignItems="flex-start" justifyContent={"flex-start"}>
+                    <a className="links" href="https://www.linkedin.com/in/jbroa2802/"><FooterButton title="LinkedIn" handle="@jbroa2802"/></a>
+                    <a className="links" href="https://github.com/jameBroa/"><FooterButton title="Github" handle="@jameBroa"/></a>
                 </Stack>
 
             </Stack>

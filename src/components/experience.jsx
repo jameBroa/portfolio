@@ -17,7 +17,7 @@ const Experience = (props) => {
         <Stack direction="column" sx={{alignItems:{xs:'center', lg:'flex-start'}}} spacing={1}>
             <motion.div
 
-            whileInView={{y:[200,0]}}
+            whileInView={{x:[200,0]}}
                         
             >
 

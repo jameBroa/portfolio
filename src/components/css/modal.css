@@ -1,0 +1,25 @@
+.modal-div{
+    position:fixed;
+    inset: 0;
+    display:grid;
+    backdrop-filter: blur(5px);
+    place-items: center;
+    width:'50%';
+    height:'25%';
+    z-index: 100;
+}
+
+.modal-box{
+    /* background-color: white; */
+    border-radius: 10px;
+}
+
+.modal-icon{
+    height:150px;
+    width:150px;
+    border-radius: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}

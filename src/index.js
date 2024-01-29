@@ -23,7 +23,8 @@ const theme = createTheme({
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-    <App />
+      <div className="container-not-overflow">
+    <App /></div>
     </ThemeProvider>
   </React.StrictMode>
 );

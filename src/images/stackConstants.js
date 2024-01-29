@@ -14,3 +14,4 @@ export const AWS_LOGO = "https://media.licdn.com/dms/image/D4D12AQEmC2CSTK0unw/a
 export const MATPLOTLIB_LOGO = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Matplotlib_icon.svg/180px-Matplotlib_icon.svg.png?20150311090915"
 export const NUMPY_LOGO = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/512px-NumPy_logo_2020.svg.png"
 export const SEABORN_LOGO = "https://seeklogo.com/images/S/seaborn-logo-244EB2DEC5-seeklogo.com.png"
+export const C_LOGO = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/380px-C_Programming_Language.svg.png?20201031132917";

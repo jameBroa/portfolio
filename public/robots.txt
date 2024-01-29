@@ -1,3 +1,45 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+
+Java
+Python
+Javascript
+C
+Haskell
+html
+css
+
+
+Projects:
+s/library
+weightlifitng api
+room management
+fitness tracking
+airbnb
+golf companion
+orbit simulation
+automatic login script
+portfolio website
+ILP cw
+SEPP cw
+Mobile app to track temperature
+Self made IoT device
+
+
+
+Web Dev:
+
+Projects:
+S/library, Fintess tracker, Portfolio Website
+
+Technologies:
+Firebase Auth, Firebase Storage, AWS DynamoDB, Framer Motion, MUI
+
+
+
+
+
+
+

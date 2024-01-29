@@ -45,38 +45,40 @@
 .horizontalSection {
   position:relative;
   height:300vh;
+  z-index: 3;
+
+  
 }
 
-.carousel-div{
-  position:sticky;
-  top:0;
-  display:flex;
-  overflow:hidden;
-  justify-content: center;
-  height: 100vh;
 
-}
+    .carousel-div{
+      position:sticky;
+      top:0;
+      display:flex;
+      overflow:hidden;
+      overflow-x:hidden;
+      justify-content: center;
+      height: 100vh;
+      z-index: 3;
+
+  }
+
+
+
 
 .horizontalMotionDiv{
   display:flex;
   height:inherit;
   align-items: center;
+  z-index: 3;
+
 }
 
 .carousel-text{
   color:white;
 }
 
-:root {
-  --x-start: 25.5px;
-  --x-end: -26%;
-}
-
-
-@media only screen and (min-width: 1200px) {
-  :root {
-    --x-start: 25.5px;
-    --x-end: -26%;
-  }
+body {
+  overflow-x: hidden;
 }
 

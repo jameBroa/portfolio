@@ -2,5 +2,21 @@
     color:white;
 }
 
-.img{
+@media only screen and (min-width: 0px) {
+    .exp-img{
+        width:200px;
+        height:200px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .exp-img{
+        width:400px;
+        height:400px;
+    }
+}
+
+.links-proj {
+    text-decoration: none;
+    color:black;
 }

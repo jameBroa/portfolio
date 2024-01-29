@@ -21,119 +21,164 @@ const HorizontalCarousel = () => {
 
   // const x = useTransform(scrollYProgress, [0, 1], ['25.5px', "-26%"]);
 
-  const [calculatedValue1, setCalculatedValue1] = useState('25.5px');
-  const [calculatedValue2, setCalculatedValue2] = useState('-26%');
-
+  const [calculatedValue1, setCalculatedValue1] = useState('20px');
+  // const [calculatedValue2, setCalculatedValue2] = useState('-26%');
+    const [calculatedValue2, setCalculatedValue2] = useState('-2500px');
   // Function to recalculate values based on window size
   const calculateValuesBasedOnWindowSize = () => {
     const windowWidth = window.innerWidth;
     // const windowHeight = window.innerHeight;
 
-    if(windowWidth < 470){
-      setCalculatedValue2('-88.50%');
+
+
+
+    if(windowWidth < 330){
+      setCalculatedValue2('-1905px');
+
     }
-    else if(windowWidth < 505){
-      setCalculatedValue2('-87.50%');
+
+    else if(windowWidth < 350){
+      setCalculatedValue2('-1885px');
+
     }
-    else if(windowWidth < 540){
-      setCalculatedValue2('-86.50%');
+
+    else if(windowWidth < 370){
+      setCalculatedValue2('-1865px');
+
+    }
+
+    else if(windowWidth < 395){
+      setCalculatedValue2('-1845px');
+
+    }
+
+
+    else if(windowWidth < 410){
+      setCalculatedValue2('-1825px');
+
+    }
+
+    else if(windowWidth < 435){
+      setCalculatedValue2('-1805px');
+
+    }
+
+    else if(windowWidth < 450){
+      setCalculatedValue2('-1785px');
+
+    }
+    else if(windowWidth < 475){
+      setCalculatedValue2('-1765px');
+
+    }
+
+    else if(windowWidth < 490){
+      setCalculatedValue2('-1745px');
+
+    }
+    else if(windowWidth < 514){
+      setCalculatedValue2('-1725px');
+    }
+
+    else if(windowWidth < 530){
+      setCalculatedValue2('-1705px');
+    }
+    else if(windowWidth < 555){
+      setCalculatedValue2('-1685px');
     }
     else if(windowWidth < 575){
-      setCalculatedValue2('-85.50%');
+      setCalculatedValue2('-1665px');
+    }
+    else if(windowWidth < 605){
+      setCalculatedValue2('-1645px');
     }
 
-    else if(windowWidth < 615){
-      setCalculatedValue2('-84.50%');
-    }
-    else if(windowWidth < 650){
-      setCalculatedValue2('-83.50%');
+    else if(windowWidth < 635){
+      setCalculatedValue2('-3005px');
     }
     else if(windowWidth < 670){
-      setCalculatedValue2('-82.50%');
+      setCalculatedValue2('-2980px');
     }
-    else if(windowWidth < 740){
-      setCalculatedValue2('-81.90%');
+    else if(windowWidth < 700){
+      setCalculatedValue2('-2950px');
     }
 
     else if(windowWidth < 740){
-      setCalculatedValue2('-80.90%');
+      setCalculatedValue2('-2908px');
     }
     else if(windowWidth < 780){
-      setCalculatedValue2('-79.98%');
+      setCalculatedValue2('-2870px');
     }
     else if(windowWidth < 820){
-      setCalculatedValue2('-78.98%');
+      setCalculatedValue2('-2840px');
     }
     else if(windowWidth < 860){
-      setCalculatedValue2('-77.65%');
+      setCalculatedValue2('-2790px');
     }
 
     else if(windowWidth < 900){
-      setCalculatedValue2('-76.55%');
+      setCalculatedValue2('-2755px');
     }
 
     else if(windowWidth < 950){
-      setCalculatedValue2('-75.55%');
+      setCalculatedValue2('-2705px');
     }
 
     else if(windowWidth < 990){
-      setCalculatedValue2('-74.12%');
+      setCalculatedValue2('-2665px');
     }
     else if(windowWidth < 1040){
-      setCalculatedValue2('-73.12%');
+      setCalculatedValue2('-2620px');
     }
 
     else if(windowWidth < 1070){
-      setCalculatedValue2('-71.74%');
+      setCalculatedValue2('-2590px');
     }
 
     else if(windowWidth < 1120){
-      setCalculatedValue2('-70.85%');
+      setCalculatedValue2('-2545px');
     }
     else if(windowWidth < 1200) {
-      setCalculatedValue1('1.2px');
-      setCalculatedValue2('-69.85%');
+      setCalculatedValue1('50px');
+      setCalculatedValue2('-2468px');
     }
 
     else if(windowWidth < 1290) {
-      setCalculatedValue1('33.8px');
-      setCalculatedValue2('-33.75%');
+      setCalculatedValue1('1235px');
+      setCalculatedValue2('-1233px');
     }
 
     else if(windowWidth < 1370) {
-      setCalculatedValue1('32.5px');
-      setCalculatedValue2('-32.55%');
+      setCalculatedValue1('1185px');
+      setCalculatedValue2('-1190px');
     }
 
     else if(windowWidth < 1450){
-      setCalculatedValue1('31.5px');
-      setCalculatedValue2('-31.95%');
+      setCalculatedValue1('1145px');
+      setCalculatedValue2('-1148px');
     }
 
     else if(windowWidth < 1550) {
-      setCalculatedValue1('30.5px');
-      setCalculatedValue2('-30.45%');
+      setCalculatedValue1('1095px');
+      setCalculatedValue2('-1103px');
     }
 
     else if(windowWidth < 1650){
-      setCalculatedValue1('29.0px');
-      setCalculatedValue2('-29.45%');
+      setCalculatedValue1('1055px');
+      setCalculatedValue2('-1054px');
     }
 
     else if (windowWidth < 1800){
-      setCalculatedValue1('27.5px');
-      setCalculatedValue2('-27.5%');
+      setCalculatedValue1('1015px');
+      setCalculatedValue2('-1008px');
     }
 
-    else if(windowWidth < 1200){
-      setCalculatedValue1('1.5px');
-      setCalculatedValue2('-69%');
-    }
+  
     else {
 
     // Update the state variables with the new calculated values
-    setCalculatedValue1('25.5px');
-    setCalculatedValue2('-26%');
+    setCalculatedValue1('950px');
+    setCalculatedValue2('-960px');
     }
   };
 
@@ -168,54 +213,54 @@ const HorizontalCarousel = () => {
             <motion.div
             whileHover={{scale:1.025}}
             >
-          <Paper sx={{height:{sm:'800px', xs:'800px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:webDevColour, }}>
-            <CarouselItem title="S/Library" imgSrc={SLibrary} stack={[REACT_LOGO, HTML_LOGO, CSS_LOGO, FIREBASE_LOGO]} desc="A self led and developed project in which I created a web-app based in React with Firebase Services to allow students to upload second hand textbooks for other students to purchase"/>
+          <Paper sx={{height:{sm:'800px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:webDevColour, }}>
+            <CarouselItem title="S/Library" url="https://www.youtube.com/watch?v=ZprjkS6JQkc"  imgSrc={SLibrary} stack={[REACT_LOGO, HTML_LOGO, CSS_LOGO, FIREBASE_LOGO]} desc="A self led and developed project in which I created a web-app based in React with Firebase Services to allow students to upload second hand textbooks for other students to purchase"/>
           </Paper>
           </motion.div>
           <motion.div
             whileHover={{scale:1.025}}
             >
-          <Paper sx={{height:'800px', width:'500px', backgroundColor:javaColour, }}>
-            <CarouselItem title="Weightlifting API" stack={[JAVA_LOGO, MONGODB_LOGO, SPRING_LOGO]} imgSrc={WeightLiftingAPI} desc="This Weightlifting API can be used to retrieve competition lifts from the Olympic Weightlifting during the Olympics in 2012. "/>
-          </Paper>
-          </motion.div>
-          
-          <motion.div
-            whileHover={{scale:1.025}}
-            >
-          <Paper sx={{height:'800px', width:'500px', backgroundColor:javaColour, }}>
-            <CarouselItem title="Room Management" stack={[JAVA_LOGO, MYSQL_LOGO]} imgSrc={RoomMgment} desc="This project was part of my Computer Science IA for the IB where I aimed to create a Java based application for the Music department in my school. The whole project revolved around the product development cycle. "/>
-          </Paper></motion.div>
-
-
-          <motion.div
-            whileHover={{scale:1.025}}
-            >
-          <Paper sx={{height:'800px', width:'500px', backgroundColor:webDevColour, }}>
-            <CarouselItem imgSrc={OlyTracking} stack={[HTML_LOGO, CSS_LOGO, REACT_LOGO, CHARTJS_LOGO, AWS_LOGO]} title="Fitness Tracking App" desc="This fitness tracking app can be used to record a users Olympic Weightlifting lifts. The design is modern and responsive and is primarily a mobile web app."/>
-          </Paper></motion.div>
-          
-          <motion.div
-            whileHover={{scale:1.025}}
-            >
-          <Paper sx={{height:'800px', width:'500px', backgroundColor:pythonColour, }}>
-            <CarouselItem title="Airbnb Data Analysis" stack={[PYTHON_LOGO, MATPLOTLIB_LOGO, NUMPY_LOGO, SEABORN_LOGO]} imgSrc={Airbnb} desc="This project was part of my Data science course where I took an Airbnb dataset for Edinburgh and analyzed its contents to discover interesting details about the airbnb market using data analysis "/>
+          <Paper sx={{height:{sm:'800px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:javaColour, }}>
+            <CarouselItem title="Weightlifting API" url="https://github.com/jameBroa/weightlifting-api" stack={[JAVA_LOGO, MONGODB_LOGO, SPRING_LOGO]} imgSrc={WeightLiftingAPI} desc="This Weightlifting API can be used to retrieve competition lifts from the Olympic Weightlifting during the Olympics in 2012. "/>
           </Paper>
           </motion.div>
           
           <motion.div
             whileHover={{scale:1.025}}
             >
-          <Paper sx={{height:'800px', width:'500px', backgroundColor:mobileColour}}>
-            <CarouselItem title="Golf Companion App" stack={[HTML_LOGO, CSS_LOGO, REACT_LOGO, JS_LOGO]} imgSrc={IntelliPutt} desc="This Weightlifting API can be used to retrieve competition lifts from the Olympic Weightlifting during the Olympics in 2012. "/>
+          <Paper sx={{height:{sm:'800px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:javaColour, }}>
+            <CarouselItem title="Room Management" url="https://github.com/jameBroa/music-booking-application" stack={[JAVA_LOGO, MYSQL_LOGO]} imgSrc={RoomMgment} desc="This project was part of my Computer Science IA for the IB where I aimed to create a Java based application for the Music department in my school. The whole project revolved around the product development cycle. "/>
+          </Paper></motion.div>
+
+
+          <motion.div
+            whileHover={{scale:1.025}}
+            >
+          <Paper sx={{height:{sm:'800px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:webDevColour, }}>
+            <CarouselItem imgSrc={OlyTracking} url="https://github.com/jameBroa/oly-tracking-web-app" stack={[HTML_LOGO, CSS_LOGO, REACT_LOGO, CHARTJS_LOGO, AWS_LOGO]} title="Fitness Tracking App" desc="This fitness tracking app can be used to record a users Olympic Weightlifting lifts. The design is modern and responsive and is primarily a mobile web app."/>
+          </Paper></motion.div>
+          
+          <motion.div
+            whileHover={{scale:1.025}}
+            >
+          <Paper sx={{height:{sm:'800px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:pythonColour, }}>
+            <CarouselItem title="Airbnb Data Analysis" url="https://raw.githubusercontent.com/jameBroa/cv/7181335fadc41d6cc790254f2e981f461e3cfa32/Airbnb's%20in%20Edinburgh.pdf" stack={[PYTHON_LOGO, MATPLOTLIB_LOGO, NUMPY_LOGO, SEABORN_LOGO]} imgSrc={Airbnb} desc="This project was part of my Data science course where I took an Airbnb dataset for Edinburgh and analyzed its contents to discover interesting details about the airbnb market using data analysis "/>
+          </Paper>
+          </motion.div>
+          
+          <motion.div
+            whileHover={{scale:1.025}}
+            >
+          <Paper sx={{height:{sm:'800px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:mobileColour}}>
+            <CarouselItem title="Golf Companion App" unfinished stack={[HTML_LOGO, CSS_LOGO, REACT_LOGO, JS_LOGO]} imgSrc={IntelliPutt} desc="This Weightlifting API can be used to retrieve competition lifts from the Olympic Weightlifting during the Olympics in 2012. "/>
 
           </Paper></motion.div>
           
           <motion.div
             whileHover={{scale:1.025}}
             >
-          <Paper sx={{height:'800px', width:'500px', backgroundColor:pythonColour}}>
-            <CarouselItem title="Orbit Simulation" stack={[PYTHON_LOGO, MATPLOTLIB_LOGO, NUMPY_LOGO]} imgSrc={Solar} desc="This project was part of an optional elective in University where I had to model the orbits of our planets in our solar system. This was written in Python and MatPlotlib. The simulation was then used as part of an 'experiment' and subsequent report."/>
+          <Paper sx={{height:{sm:'800px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:pythonColour}}>
+            <CarouselItem title="Orbit Simulation" url="https://github.com/jameBroa/solarSystemModel" stack={[PYTHON_LOGO, MATPLOTLIB_LOGO, NUMPY_LOGO]} imgSrc={Solar} desc="This project was part of an optional elective in University where I had to model the orbits of our planets in our solar system. This was written in Python and MatPlotlib. The simulation was then used as part of an 'experiment' and subsequent report."/>
           </Paper></motion.div>
 
 
