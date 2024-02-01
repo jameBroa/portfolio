@@ -206,7 +206,9 @@ const HorizontalCarousel = () => {
   // const x = useTransform(scrollYProgress, [0, 1], [`var(--x-start)`, `var(--x-end)`]);
   return (
     <section ref={targetRef} className="horizontalSection">
+
       <div className="carousel-div" >
+        
         <motion.div style={{ x }} className="horizontalMotionDiv">
             <Stack direction="row" spacing={2}>
 

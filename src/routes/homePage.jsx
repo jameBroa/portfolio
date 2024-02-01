@@ -29,7 +29,13 @@ export default function HomePage()  {
     restDelta: 0.001
   })
 
+  const scrollRef = useRef();
+
   const navigate = useNavigate();
+
+  const goProjects = (e) => {
+      scrollRef.current.scrollIntoView({behaviour:'smooth'})
+  }
 
   useEffect(()=> {
     console.log(scrollYProgress.current)
@@ -83,7 +89,7 @@ export default function HomePage()  {
             whileInView={{scale:[0.5,1]}} 
             transition={{type:'spring'}}
             >
-            <Button onClick={() => {navigate("/projects")}}endIcon={<ArrowForwardIcon/>} color='black' variant='contained' sx={{color:'white', borderRadius:'50px', height:'60px', width:'300px', textTransform:'none'}}>
+            <Button onClick={goProjects} endIcon={<ArrowForwardIcon/>} color='black' variant='contained' sx={{color:'white', borderRadius:'50px', height:'60px', width:'300px', textTransform:'none'}}>
                   <Typography variant="h6" sx={{fontWeight:'300'}}>Let's have a look!</Typography>
             </Button>
             </motion.div>
@@ -229,6 +235,11 @@ export default function HomePage()  {
             </Grid>
 
           </Grid>
+
+          <Grid ref={scrollRef} item xs={12} sx={{display:'flex', justifyContent:'center'}}>
+            <Typography sx={{fontSize:{lg:'124px', md:'70px', sm:'65px', xs:'50px'}, fontWeight:'300'}}>Project Highlights</Typography>
+          </Grid>
+
           <Grid mb={12} item lg={12}>
             <HorizontalCarousel/>
           </Grid>
