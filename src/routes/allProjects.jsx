@@ -33,7 +33,7 @@ export default function AllProjects() {
                             >
                                 <Paper sx={{height:'400px'}}>
                                     <Stack direction="column" pt={2} alignItems='center' spacing={2}>
-                                        <Typography sx={{textAlign:'center', width:'85%'}} variant="h4">{project.title}</Typography>
+                                        <Typography sx={{textAlign:'center', width:'85%', fontSize:{lg:'28px'}}} variant="h4">{project.title}</Typography>
                                         <Typography sx={{textAlign:'center', width:'95%', height:'5rem', }} variant="p">{project.desc}</Typography>
                                         <img width="150px" height="150px" src={project.img}/>
                                             {project.tag.map((tags, index) => {

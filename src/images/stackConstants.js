@@ -15,3 +15,4 @@ export const MATPLOTLIB_LOGO = "https://upload.wikimedia.org/wikipedia/commons/t
 export const NUMPY_LOGO = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/512px-NumPy_logo_2020.svg.png"
 export const SEABORN_LOGO = "https://seeklogo.com/images/S/seaborn-logo-244EB2DEC5-seeklogo.com.png"
 export const C_LOGO = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/380px-C_Programming_Language.svg.png?20201031132917";
+export const ANDROID_LOGO = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/511px-Android_robot.svg.png?20180121030125  "
