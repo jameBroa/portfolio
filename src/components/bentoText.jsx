@@ -30,9 +30,6 @@ const BentoText = (props) => {
                 )}
                 
             </Stack>
-            <Button onClick={() => {navigate("/projects")}} color='black' sx={{textTransform:'none', width:'120px'}} endIcon={<ArrowForwardIcon/>}>
-                  <Typography sx={{color:'black'}} variant="p">Learn More</Typography>
-            </Button>
             <InformationModal bgColor={props.color} isOpen={isOpen} setIsOpen={setIsOpen} />
 
 
