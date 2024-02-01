@@ -15,17 +15,13 @@ const Header = () => {
                     sm:'120px',
                     lg:'180px',
                 }}}>
-                    <img id="logo" src={logo}/>
+                    {/* <img id="logo" src={logo}/> */}
                 </Box>
             </Grid>
-            <Grid item lg={1} md={1} sm={2} xs={2} sx={{display:'flex', justifyContent:"center", alignItems:"center"}}>
-                <Button className="headerButton" color='black' sx={{textTransform:'none'}}>
-                    <Typography variant="h5" sx={{color:'black'}}>About</Typography>
-                </Button>
-            </Grid>
-            <Grid item lg={1} md={1} sm={2} xs={2} sx={{display:'flex', justifyContent:"center", alignItems:"center"}}>
-                <Button className="headerButton" color='black' sx={{textTransform:'none'}}>
-                    <Typography variant="h5" sx={{color:'black'}}>CV</Typography>
+            
+            <Grid item lg={2} md={2} sm={2} xs={2} sx={{display:'flex', justifyContent:"center", alignItems:"center"}}>
+                <Button className="headerButton" variant="outlined" color='black' sx={{textTransform:'none', width:'175px', borderRadius:'50px', border:'solid', borderWidth:'1px', height:'60px'}}>
+                    <Typography variant="h5" sx={{color:'black', fontWeight:'400', fontSize:'16px'}}>Download CV</Typography>
                 </Button>
             </Grid>
         </Grid>

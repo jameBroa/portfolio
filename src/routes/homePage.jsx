@@ -83,7 +83,7 @@ export default function HomePage()  {
             whileInView={{scale:[0.5,1]}} 
             transition={{type:'spring'}}
             >
-            <Button endIcon={<ArrowForwardIcon/>} color='black' variant='contained' sx={{color:'white', borderRadius:'50px', height:'60px', width:'300px', textTransform:'none'}}>
+            <Button onClick={() => {navigate("/projects")}}endIcon={<ArrowForwardIcon/>} color='black' variant='contained' sx={{color:'white', borderRadius:'50px', height:'60px', width:'300px', textTransform:'none'}}>
                   <Typography variant="h6" sx={{fontWeight:'300'}}>Let's have a look!</Typography>
             </Button>
             </motion.div>
