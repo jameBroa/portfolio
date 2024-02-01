@@ -1,8 +1,10 @@
 import { Box, Button, Grid, Paper, Stack, Typography } from '@mui/material'
 import React from 'react'
 import logo from '../images/logo.png';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+    const navigate = useNavigate();
   return (
     <div>
         <Grid container >
@@ -20,9 +22,10 @@ const Header = () => {
             </Grid>
             
             <Grid item lg={2} md={2} sm={3} xs={4} sx={{display:'flex', justifyContent:"center", alignItems:"center"}}>
+                <a href="https://github.com/jameBroa/portfolio/blob/master/resume_latest.pdf" >
                 <Button className="headerButton" variant="outlined" color='black' sx={{textTransform:'none', width:'175px', borderRadius:'50px', border:'solid', borderWidth:'1px', height:'60px'}}>
                     <Typography variant="h5" sx={{color:'black', fontWeight:'400', fontSize:'16px'}}>Download CV</Typography>
-                </Button>
+                </Button></a>
             </Grid>
         </Grid>
 
