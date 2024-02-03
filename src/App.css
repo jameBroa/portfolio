@@ -54,11 +54,11 @@ body{
   
 }
 
-
-    .carousel-div{
+@media only screen and (min-width: 1200px) {
+  .carousel-div{
       position:sticky;
-      top:0;
       display:flex;
+      top:0;
       overflow:hidden;
       overflow-x:hidden;
       justify-content: center;
@@ -66,6 +66,27 @@ body{
       z-index: 3;
 
   }
+}
+
+
+@media only screen and (min-width: 1536px) {
+  .carousel-div{
+      position:sticky;
+      display:flex;
+      top:0;
+      overflow:hidden;
+      overflow-x:hidden;
+      justify-content: center;
+      background-color:white;
+      height: 100vh;
+      z-index: 3;
+
+  }
+}
+
+
+
+    
 
 
 

@@ -9,7 +9,7 @@ const CarouselItem = (props) => {
     console.log(props.stack)
   }
   return (
-    <Stack className="img" direction="column" spacing={3} pl={1} alignItems="center" sx={{display:'flex', height:'100%'}}> 
+    <Stack className="img" direction="column" spacing={2} pl={1} alignItems="center" sx={{display:'flex', height:'100%'}}> 
         <Typography  sx={{fontSize:{sm:'50px', xs:'30px'}}}>{props.title}</Typography>
         <img className="exp-img" src={props.imgSrc}/>
         <Typography sx={{width:'auto', height:{sm:'120px',xs:'150px'}, textAlign:'center'}} >{props.desc}</Typography>

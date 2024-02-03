@@ -240,7 +240,7 @@ export default function HomePage()  {
             <Typography sx={{fontSize:{lg:'124px', md:'70px', sm:'65px', xs:'50px'}, fontWeight:'300'}}>Project Highlights</Typography>
           </Grid>
 
-          <Grid mb={12} item lg={12}>
+          <Grid mb={12} item lg={12} >
             <HorizontalCarousel/>
           </Grid>
 
