@@ -215,14 +215,14 @@ const HorizontalCarousel = () => {
             <motion.div
             whileHover={{scale:1.025}}
             >
-          <Paper sx={{ height:{xl:'800px', lg:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:webDevColour, }}>
+          <Paper sx={{ height:{xl:'800px', md:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:webDevColour, }}>
             <CarouselItem title="S/Library" url="https://www.youtube.com/watch?v=ZprjkS6JQkc"  imgSrc={SLibrary} stack={[REACT_LOGO, HTML_LOGO, CSS_LOGO, FIREBASE_LOGO]} desc="A self led and developed project in which I created a web-app based in React with Firebase Services to allow students to upload second hand textbooks for other students to purchase"/>
           </Paper>
           </motion.div>
           <motion.div
             whileHover={{scale:1.025}}
             >
-          <Paper sx={{height:{xl:'800px', lg:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:javaColour, }}>
+          <Paper sx={{height:{xl:'800px', md:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:javaColour, }}>
             <CarouselItem title="Weightlifting API" url="https://github.com/jameBroa/weightlifting-api" stack={[JAVA_LOGO, MONGODB_LOGO, SPRING_LOGO]} imgSrc={WeightLiftingAPI} desc="This Weightlifting API can be used to retrieve competition lifts from the Olympic Weightlifting during the Olympics in 2012. "/>
           </Paper>
           </motion.div>
@@ -230,22 +230,22 @@ const HorizontalCarousel = () => {
           <motion.div
             whileHover={{scale:1.025}}
             >
-          <Paper sx={{height:{xl:'800px', lg:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:javaColour, }}>
-            <CarouselItem title="Room Management" url="https://github.com/jameBroa/music-booking-application" stack={[JAVA_LOGO, MYSQL_LOGO]} imgSrc={RoomMgment} desc="This project was part of my Computer Science IA for the IB where I aimed to create a Java based application for the Music department in my school. The whole project revolved around the product development cycle. "/>
+          <Paper sx={{height:{xl:'800px', md:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:javaColour, }}>
+            <CarouselItem title="Room Management" url="https://github.com/jameBroa/music-booking-application" stack={[JAVA_LOGO, MYSQL_LOGO]} imgSrc={RoomMgment} desc="This project was part of my Computer Science IA for the IB where I aimed to create a Java based application for the Music department in my school."/>
           </Paper></motion.div>
 
 
           <motion.div
             whileHover={{scale:1.025}}
             >
-          <Paper sx={{height:{xl:'800px', lg:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:webDevColour, }}>
+          <Paper sx={{height:{xl:'800px', md:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:webDevColour, }}>
             <CarouselItem imgSrc={OlyTracking} url="https://github.com/jameBroa/oly-tracking-web-app" stack={[HTML_LOGO, CSS_LOGO, REACT_LOGO, CHARTJS_LOGO, AWS_LOGO]} title="Fitness Tracking App" desc="This fitness tracking app can be used to record a users Olympic Weightlifting lifts. The design is modern and responsive and is primarily a mobile web app."/>
           </Paper></motion.div>
           
           <motion.div
             whileHover={{scale:1.025}}
             >
-          <Paper sx={{height:{xl:'800px', lg:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:pythonColour, }}>
+          <Paper sx={{height:{xl:'800px', md:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:pythonColour, }}>
             <CarouselItem title="Airbnb Data Analysis" url="https://raw.githubusercontent.com/jameBroa/cv/7181335fadc41d6cc790254f2e981f461e3cfa32/Airbnb's%20in%20Edinburgh.pdf" stack={[PYTHON_LOGO, MATPLOTLIB_LOGO, NUMPY_LOGO, SEABORN_LOGO]} imgSrc={Airbnb} desc="This project was part of my Data science course where I took an Airbnb dataset for Edinburgh and analyzed its contents to discover interesting details about the airbnb market using data analysis "/>
           </Paper>
           </motion.div>
@@ -253,7 +253,7 @@ const HorizontalCarousel = () => {
           <motion.div
             whileHover={{scale:1.025}}
             >
-          <Paper sx={{height:{xl:'800px', lg:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:mobileColour}}>
+          <Paper sx={{height:{xl:'800px', md:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:mobileColour}}>
             <CarouselItem title="Golf Companion App" unfinished stack={[HTML_LOGO, CSS_LOGO, REACT_LOGO, JS_LOGO]} imgSrc={IntelliPutt} desc="This Weightlifting API can be used to retrieve competition lifts from the Olympic Weightlifting during the Olympics in 2012. "/>
 
           </Paper></motion.div>
@@ -261,8 +261,8 @@ const HorizontalCarousel = () => {
           <motion.div
             whileHover={{scale:1.025}}
             >
-          <Paper sx={{height:{xl:'800px', lg:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:pythonColour}}>
-            <CarouselItem title="Orbit Simulation" url="https://github.com/jameBroa/solarSystemModel" stack={[PYTHON_LOGO, MATPLOTLIB_LOGO, NUMPY_LOGO]} imgSrc={Solar} desc="This project was part of an optional elective in University where I had to model the orbits of our planets in our solar system. This was written in Python and MatPlotlib. The simulation was then used as part of an 'experiment' and subsequent report."/>
+          <Paper sx={{height:{xl:'800px', md:'670px', xs:'600px'}, width:{sm:'500px', xs:'300px'}, backgroundColor:pythonColour}}>
+            <CarouselItem title="Orbit Simulation" url="https://github.com/jameBroa/solarSystemModel" stack={[PYTHON_LOGO, MATPLOTLIB_LOGO, NUMPY_LOGO]} imgSrc={Solar} desc="This project was part of an optional elective in University where I had to model the orbits of our planets in our solar system. This was written in Python and MatPlotlib."/>
           </Paper></motion.div>
 
 
